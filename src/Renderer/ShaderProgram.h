@@ -12,6 +12,7 @@ namespace Renderer
 		~ShaderProgram();
 		bool isCompiled() { return m_isCompiled; }
 		void use() const;
+		void setInt(const std::string& name, const GLint value);
 
 		ShaderProgram() = delete; // это запрещение конструктора без параметров
 		ShaderProgram(ShaderProgram&) = delete;
